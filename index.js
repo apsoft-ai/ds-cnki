@@ -64,7 +64,7 @@ function deepseek_silicon(pt){
 
 	var key;
 
-	编辑框2.置内容("DeepSeek-R1-Distill-Qwen-7B思考中……\n\n非流式输出，耗时稍长，请耐心等待。");
+	编辑框2.置内容("思考中……\n\n非流式输出，耗时稍长，请耐心等待。");
 
 	url = "https://api.siliconflow.cn/v1/chat/completions";
 
