@@ -1,7 +1,7 @@
 mui.init({swipeBack: false
 ,gestureConfig: {tap:true,doubletap:true,longtap:true,hold:true,release:true}});
 
-var 标题栏1 = new 标题栏("标题栏1",null,标题栏1_右侧图标被单击,标题栏1_左侧图标被单击);
+var 标题栏1 = new 标题栏("标题栏1",null,标题栏1_右侧图标被单击,null);
 var 编辑框1 = new 编辑框("编辑框1",null,null,null,null,null);
 var 按钮组1 = new 按钮组("按钮组1",按钮组1_被单击);
 var 按钮1 = new 按钮("按钮1",按钮1_被单击,null,null);
@@ -26,7 +26,6 @@ if(mui.os.plus){
 function 主窗口_创建完毕(){
 
 
-
 	图片框1.置图片("https://qr.api.cli.im/qr/index/jsonp_generate?data=https://qr05.cn/Cb729V&kid=cliim");
 
 	部署按钮组1();
@@ -39,7 +38,7 @@ function 部署菜单(){
 
 	菜单1.添加菜单项("示例");
 
-	菜单1.添加菜单项("京东图书");
+
 
 	菜单1.添加菜单项("通用爬虫");
 
@@ -126,11 +125,11 @@ function 按钮组1_被单击(按钮索引){
 	}
 
 }
-function 标题栏1_左侧图标被单击(){
 
-	窗口操作.切换窗口("index.html");
 
-}
+
+
+
 function 标题栏1_右侧图标被单击(){
 
 	菜单1.显示菜单();
@@ -144,10 +143,9 @@ function 菜单1_菜单项被单击(菜单项标题){
 
 		编辑框1.置内容("想在“中国知网”中检索与“信息素养”相关文献，要求如下：\n近5年内论文，太老的文献不需要；\n文章内容突出“人工智能”或“元宇宙”或“智能检索”；\n文章需提到“师范大学图书馆信息素养课程”。");
 
-	break;
-	case "京东图书" :
 
-		窗口操作.打开指定网址("https://union-click.jd.com/jdc?e=618%7Cpc%7C&p=JF8BAJkJK1olXDYDZBoCUBVIMzZNXhpXVhgcBwADUlRMVnBaRQcLbXJnMA5eFkpSZgxMbghWCXQECQoaaR0bD18IHVwRXwYyUVpcDksWBl84G1glFmgDZF1cDEoUCmsAGlglXQABVlheDUoeBGsIE2sSXQ8yBB8fVhxSbTM4K2sWbQECXUpbegpFF2l6K2sUbQUyZFxcCU8eM184K2s", 2);
+
+
 
 	break;
 	case "通用爬虫" :
